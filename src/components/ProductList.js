@@ -22,7 +22,7 @@ export default class ProductList extends React.Component {
       });
 
     return (
-      <Container>
+      <Container className="container-card">
         <Row xs="4" md="3">
           {items}
         </Row>

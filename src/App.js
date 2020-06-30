@@ -45,7 +45,6 @@ export default class App extends Component {
       console.log("productName", item.productName);
       if (item.productName.toLowerCase() == userText) {
         fruitArr.push(item);
-        // fruitArr.push(newArr);
       }
     });
     console.log("new Array", fruitArr);
@@ -59,8 +58,7 @@ export default class App extends Component {
 
     return (
       <React.Fragment>
-        <div className="Container-main">
-          {" "}
+        <div className="container-main">
           <h1>Welcome to our online store</h1>
           <form className="Form" onSubmit={this.submitHandle}>
             <input
