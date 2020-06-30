@@ -1,0 +1,52 @@
+[
+  {
+    "id": 0,
+    "productName": "Apple",
+    "icon": "🍏",
+    "image": "./img/fruit_apple.jpg",
+    "price": 3,
+    "inventory": 10
+  },
+  {
+    "id": 1,
+    "productName": "Watermelon",
+    "icon": "🍉",
+    "image": "./img/fruit_watermelon.jpg",
+    "price": 0,
+    "inventory": 3
+  },
+  {
+    "id": 2,
+    "productName": "Strawberry",
+    "icon": "",
+    "image": "./img/fruit_strawberries.jpg",
+    "price": 10,
+    "inventory": 100
+  },
+  {
+    "id": 3,
+    "productName": "Kiwi",
+    "icon": "",
+    "image": "./img/fruit_kiwi.jpg",
+    "price": 40,
+    "inventory": 0
+  },
+  {
+    "id": 4,
+    "productName": "Banana",
+    "icon": "",
+    "image": "./img/fruit_banana.jpg",
+
+    "price": 7,
+    "inventory": 66
+  },
+  {
+    "id": 5,
+    "productName": "Mango",
+    "icon": "",
+    "image": "./img/fruit_mango.jpg",
+
+    "price": 7,
+    "inventory": 66
+  }
+]
