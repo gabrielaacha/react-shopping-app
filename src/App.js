@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import Data from "./data.json";
 import ProductList from "./components/ProductList";
+// import {
+//   Card,
+//   CardImg,
+//   CardText,
+//   CardBody,
+//   CardTitle,
+//   CardSubtitle,
+//   Button,
+// } from "reactstrap";
 
 export default class App extends Component {
   constructor(props) {
@@ -36,6 +45,7 @@ export default class App extends Component {
       console.log("productName", item.productName);
       if (item.productName.toLowerCase() == userText) {
         fruitArr.push(item);
+        // fruitArr.push(newArr);
       }
     });
     console.log("new Array", fruitArr);
@@ -49,21 +59,23 @@ export default class App extends Component {
 
     return (
       <React.Fragment>
-        <h1>Welcome to our online store</h1>
-        <form onSubmit={this.submitHandle}>
-          <input
-            type="text"
-            onChange={this.changeHandle}
-            value={this.state.userInput}
+        <div className="Container-main">
+          {" "}
+          <h1>Welcome to our online store</h1>
+          <form className="Form" onSubmit={this.submitHandle}>
+            <input
+              type="text"
+              onChange={this.changeHandle}
+              value={this.state.userInput}
+            />
+
+            <input type="submit" value="filter" />
+          </form>
+          <ProductList
+            data={this.state.data}
+            filteredData={this.state.filteredData}
           />
-
-          <input type="submit" value="filter" />
-        </form>
-
-        <ProductList
-          data={this.state.data}
-          filteredData={this.state.filteredData}
-        />
+        </div>
       </React.Fragment>
     );
   }
