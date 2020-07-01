@@ -1,15 +1,6 @@
 import React, { Component } from "react";
 import Data from "./data.json";
 import ProductList from "./components/ProductList";
-// import {
-//   Card,
-//   CardImg,
-//   CardText,
-//   CardBody,
-//   CardTitle,
-//   CardSubtitle,
-//   Button,
-// } from "reactstrap";
 
 export default class App extends Component {
   constructor(props) {
